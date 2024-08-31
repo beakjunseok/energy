@@ -23,13 +23,13 @@ void loop() {
     if(text == "welcome!"){
       Serial.println("모터쪽으로 가는 신호");
       myStepper.step(-40960);
-      delay(1000);
+      delay(5000);
       digitalWrite(7,HIGH);
     }
     else if(text == "goodbye!"){
       Serial.println("모터에서 멀어지는 신호");
       myStepper.step(40960);
-      delay(1000);
+      delay(5000);
       digitalWrite(7,HIGH);
     }
     else if(text == "led!"){
